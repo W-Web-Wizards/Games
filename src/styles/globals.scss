@@ -28,14 +28,19 @@ html, body {
 
 /* Styles for the Navigation Bar */
 header {
+  box-sizing: border-box;
+  padding: 30px 10%;
+
+  width: 100%;
+
+  background-color: var(--header-color);
+
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-  background-color: var(--header-color);
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 50px;
 }
 
@@ -44,7 +49,7 @@ header {
   
   flex-direction: column;
   text-align: center;
-  align-items: middle;
+  align-items: center;
   justify-content: center;
 
   width: 100px;
