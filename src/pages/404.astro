@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="title" content="Web Wizards">
+	  <meta name="description" content="A suite of Online Tools to help boost your Productivity">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>404 | Web Wizards</title>
+  	<link rel="stylesheet" href="/assets/main.css">
+  	<link rel="icon" href="/assets/favicon.png">
+  </head>
+  <body>
+   	<header id="header">
+      <div class="logo">
+        <span>WWW</span>
+      </div>
+		  <nav>
+  			<ul class="nav-links">
+          <a href="/">
+				    <li class="navigation-button">
+              Home
+            </li>
+          </a>
+          <a href="/about">
+				    <li class="navigation-button">
+              About
+            </li>
+          </a>
+          <a href="/services">
+				    <li class="navigation-button">
+              Services
+            </li>
+          </a>
+          <a href="/changelog">
+				    <li class="navigation-button">
+              Changelog
+            </li>
+          </a>
+          <a href="/blog">
+				    <li class="navigation-button">
+              Blog
+            </li>
+          </a>
+			  </ul>
+		  </nav>
+	  </header>
+  	<main id="content">
+      <br>
+      <center>
+        <h1 id="page-title">Not Found</h1>
+      </center>
+      <div class="sepatator">
+        <br>
+        <hr>
+        <br>
+      </div>
+		  <div id="main-content">
+        <table class="404-block"style="width:100%">
+          <tr>
+            <th class="current-URL-not-found"></th>
+          </tr>
+          <tr>
+            <th>
+              Error Type: 404
+            </th>
+          </tr>
+        </table>
+		  </div>
+    </main>
+  <script>
+    var currentUrl = location.href;
+    let pageTitle = document.querySelector('.current-URL-not-found')
+    pageTitle.innerHTML = '<a href="' + currentUrl + '">' + currentUrl + '</a> Was Not Found'
+  </script>
+  </body>
+</html>
