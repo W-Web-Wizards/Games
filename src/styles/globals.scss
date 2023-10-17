@@ -153,14 +153,14 @@ nav ul a li:hover {
   width: 50rem;
 }
 
-table {
+.grid {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
 }
 
-table tr {
+.grid > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -169,7 +169,7 @@ table tr {
   justify-content: center;
 }
 
-table tr td {
+.grid > div > a {
   background-color: var(--highlight-color);
   border-radius: 5%;
   padding: 20px 20px 10px 20px;
